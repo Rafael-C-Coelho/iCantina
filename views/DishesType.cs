@@ -16,5 +16,21 @@ namespace iCantina.views
         {
             InitializeComponent();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string meat = rdoBtnMeat.Text; 
+            string fish = rdoBtnFish.Text;
+            string vegetarian = rdoBtnVegetarian.Text;
+            string description = txtBoxDescription.Text;
+
+            if (string.IsNullOrWhiteSpace(txtBoxDescription.Text))
+            {
+                MessageBox.Show("Por favor, insira a descrição do prato");
+                return; 
+            }
+
+
+        }
     }
 }
