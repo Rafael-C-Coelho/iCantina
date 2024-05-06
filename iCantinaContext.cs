@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace iCantina
 {
-    internal class iCantinaContext : DbContext
+    public class iCantinaContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Student> Students { get; set; }

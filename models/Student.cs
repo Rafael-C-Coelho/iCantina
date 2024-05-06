@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    internal class Student : Client
+    public class Student : Client
     {
         public int StudentNumber { get; set; }
 

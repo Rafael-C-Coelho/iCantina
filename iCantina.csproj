@@ -86,6 +86,12 @@
     <Compile Include="views\DishesType.Designer.cs">
       <DependentUpon>DishesType.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="views\DishesType.resx">
       <DependentUpon>DishesType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

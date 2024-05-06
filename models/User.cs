@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    internal class User
+    public class User
     {
         [Key]
         public int Id { get; set; }

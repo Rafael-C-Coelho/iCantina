@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.controllers
 {
-    internal class LoginController : Controller
+    public class LoginController : Controller
     {
         public LoginController()
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    internal class InvoiceLine
+    public class InvoiceLine
     {
         [Key]
         public int Id { get; set; }

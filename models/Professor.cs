@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    internal class Professor : Client
+    public class Professor : Client
     {
         public string Email { get; set; }
         
