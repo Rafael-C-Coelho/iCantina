@@ -1,4 +1,5 @@
 ﻿using iCantina.controllers;
+using iCantina.models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,11 +24,13 @@ namespace iCantina.views
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string username = txtBoxUsername.Text;
-
-            if (controller.Authenticate(username) != null)
+            Employee employee = controller.Authenticate(username);
+            if (employee != null)
             {
                 MessageBox.Show("Login successful!");
+                MainPage mainPage = new MainPage(employee);
                 this.Hide();
+                mainPage.Show();
             }
             else
             {

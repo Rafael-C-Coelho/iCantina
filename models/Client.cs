@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    internal class Client : User
+    public class Client : User
     {
         public float Balance { get; set; }
         public ICollection<Invoice> Invoices { get; set; }

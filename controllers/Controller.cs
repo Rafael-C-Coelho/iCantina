@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace iCantina.controllers
 {
-    internal class Controller
+    public class Controller
     {
         protected iCantinaContext context;
 
