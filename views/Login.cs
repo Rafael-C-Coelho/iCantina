@@ -17,11 +17,11 @@ namespace iCantina.views
         public Login()
         {
             InitializeComponent();
-            controller = new LoginController();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            controller = new LoginController();
             string username = txtBoxUsername.Text;
 
             if (controller.Authenticate(username) != null)
