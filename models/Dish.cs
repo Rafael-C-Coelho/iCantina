@@ -6,14 +6,27 @@ using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    internal class Dish 
+    public class Dish 
     {
-        public string meat {  get; set; } 
-        public string fish { get; set; } 
-        public string vegetarian { get; set; }
+        public string Meat {  get; set; } 
+        public string Fish { get; set; } 
+        public string Vegetarian { get; set; }
 
-       
+        public ICollection<Dish> reservations { get; set; }
 
+
+        public Dish()
+        {
+            reservations = new List<Dish>();
+        }
+
+        public Dish(string meat, string fish, string vegetarian)
+        {
+            meat = Meat; 
+            fish = Fish;
+            vegetarian = Vegetarian;
+            reservations = new List<Dish>();
+        }
 
     }
 

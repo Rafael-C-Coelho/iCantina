@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controllers\Controller.cs" />
+    <Compile Include="controllers\DishController.cs" />
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="Dishes.cs">
       <SubType>Form</SubType>

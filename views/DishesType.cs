@@ -26,7 +26,7 @@ namespace iCantina.views
 
             if (string.IsNullOrWhiteSpace(txtBoxDescription.Text))
             {
-                MessageBox.Show("Por favor, insira a descrição do prato");
+                MessageBox.Show("Please, insert a description of the dish");
                 return; 
             }
 
