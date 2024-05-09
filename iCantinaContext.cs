@@ -15,5 +15,7 @@ namespace iCantina
         public DbSet<Professor> Professors { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceLine> InvoiceLines { get; set; }
+
+        public DbSet<Dish> Dishes { get; set; }   
     }
 }
