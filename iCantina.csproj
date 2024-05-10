@@ -59,12 +59,6 @@
     <Compile Include="controllers\Controller.cs" />
     <Compile Include="controllers\DishController.cs" />
     <Compile Include="controllers\LoginController.cs" />
-    <Compile Include="Dishes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dishes.Designer.cs">
-      <DependentUpon>Dishes.cs</DependentUpon>
-    </Compile>
     <Compile Include="iCantinaContext.cs" />
     <Compile Include="Migrations\202405061327027_InitialCreate.cs" />
     <Compile Include="Migrations\202405061327027_InitialCreate.Designer.cs">
@@ -74,9 +68,11 @@
     <Compile Include="models\Client.cs" />
     <Compile Include="models\Dish.cs" />
     <Compile Include="models\Employee.cs" />
+    <Compile Include="models\Extras.cs" />
     <Compile Include="models\Invoice.cs" />
     <Compile Include="models\InvoiceLine.cs" />
     <Compile Include="models\Professor.cs" />
+    <Compile Include="models\Reservation.cs" />
     <Compile Include="models\Student.cs" />
     <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
@@ -86,6 +82,12 @@
     </Compile>
     <Compile Include="views\DishesType.Designer.cs">
       <DependentUpon>DishesType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ExtrasForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ExtrasForms.Designer.cs">
+      <DependentUpon>ExtrasForms.cs</DependentUpon>
     </Compile>
     <Compile Include="views\MainPage.cs">
       <SubType>Form</SubType>
@@ -105,9 +107,12 @@
     <Compile Include="views\CanteenMenu.Designer.cs">
       <DependentUpon>CanteenMenu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dishes.resx">
-      <DependentUpon>Dishes.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="views\ReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ReservationForm.Designer.cs">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Migrations\202405061327027_InitialCreate.resx">
       <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +128,9 @@
     <EmbeddedResource Include="views\DishesType.resx">
       <DependentUpon>DishesType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\ExtrasForms.resx">
+      <DependentUpon>ExtrasForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\CanteenMenu.resx">
       <DependentUpon>CanteenMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ReservationForm.resx">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="controllers\.gitkeep" />
     <None Include="helpers\.gitkeep" />
