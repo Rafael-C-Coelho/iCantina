@@ -1,4 +1,4 @@
-﻿namespace iCantina.views
+namespace iCantina.views
 {
     partial class DishesType
     {
@@ -42,18 +42,20 @@
             // 
             this.lblMeatDish.AutoSize = true;
             this.lblMeatDish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMeatDish.Location = new System.Drawing.Point(107, 118);
+            this.lblMeatDish.Location = new System.Drawing.Point(80, 96);
+            this.lblMeatDish.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMeatDish.Name = "lblMeatDish";
-            this.lblMeatDish.Size = new System.Drawing.Size(0, 20);
+            this.lblMeatDish.Size = new System.Drawing.Size(0, 17);
             this.lblMeatDish.TabIndex = 18;
             // 
             // lblTypeDish
             // 
             this.lblTypeDish.AutoSize = true;
             this.lblTypeDish.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTypeDish.Location = new System.Drawing.Point(43, 53);
+            this.lblTypeDish.Location = new System.Drawing.Point(32, 43);
+            this.lblTypeDish.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTypeDish.Name = "lblTypeDish";
-            this.lblTypeDish.Size = new System.Drawing.Size(184, 32);
+            this.lblTypeDish.Size = new System.Drawing.Size(145, 26);
             this.lblTypeDish.TabIndex = 17;
             this.lblTypeDish.Text = "Type of Dish";
             // 
@@ -61,9 +63,10 @@
             // 
             this.rdoBtnMeat.AutoSize = true;
             this.rdoBtnMeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnMeat.Location = new System.Drawing.Point(49, 119);
+            this.rdoBtnMeat.Location = new System.Drawing.Point(37, 97);
+            this.rdoBtnMeat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoBtnMeat.Name = "rdoBtnMeat";
-            this.rdoBtnMeat.Size = new System.Drawing.Size(71, 24);
+            this.rdoBtnMeat.Size = new System.Drawing.Size(61, 21);
             this.rdoBtnMeat.TabIndex = 24;
             this.rdoBtnMeat.TabStop = true;
             this.rdoBtnMeat.Text = "Meat";
@@ -73,9 +76,10 @@
             // 
             this.rdoBtnFish.AutoSize = true;
             this.rdoBtnFish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnFish.Location = new System.Drawing.Point(179, 119);
+            this.rdoBtnFish.Location = new System.Drawing.Point(134, 97);
+            this.rdoBtnFish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoBtnFish.Name = "rdoBtnFish";
-            this.rdoBtnFish.Size = new System.Drawing.Size(66, 24);
+            this.rdoBtnFish.Size = new System.Drawing.Size(56, 21);
             this.rdoBtnFish.TabIndex = 25;
             this.rdoBtnFish.TabStop = true;
             this.rdoBtnFish.Text = "Fish";
@@ -85,9 +89,10 @@
             // 
             this.rdoBtnVegetarian.AutoSize = true;
             this.rdoBtnVegetarian.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnVegetarian.Location = new System.Drawing.Point(296, 118);
+            this.rdoBtnVegetarian.Location = new System.Drawing.Point(222, 96);
+            this.rdoBtnVegetarian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoBtnVegetarian.Name = "rdoBtnVegetarian";
-            this.rdoBtnVegetarian.Size = new System.Drawing.Size(120, 24);
+            this.rdoBtnVegetarian.Size = new System.Drawing.Size(105, 21);
             this.rdoBtnVegetarian.TabIndex = 26;
             this.rdoBtnVegetarian.TabStop = true;
             this.rdoBtnVegetarian.Text = "Vegetarian";
@@ -97,18 +102,20 @@
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(45, 198);
+            this.lblDescription.Location = new System.Drawing.Point(34, 161);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(106, 20);
+            this.lblDescription.Size = new System.Drawing.Size(90, 17);
             this.lblDescription.TabIndex = 27;
             this.lblDescription.Text = "Description";
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(236, 373);
+            this.btnSave.Location = new System.Drawing.Point(177, 303);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 30);
+            this.btnSave.Size = new System.Drawing.Size(56, 24);
             this.btnSave.TabIndex = 28;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -116,17 +123,18 @@
             // 
             // txtBoxDescription
             // 
-            this.txtBoxDescription.Location = new System.Drawing.Point(49, 221);
+            this.txtBoxDescription.Location = new System.Drawing.Point(37, 180);
+            this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxDescription.Multiline = true;
             this.txtBoxDescription.Name = "txtBoxDescription";
-            this.txtBoxDescription.Size = new System.Drawing.Size(459, 137);
+            this.txtBoxDescription.Size = new System.Drawing.Size(345, 112);
             this.txtBoxDescription.TabIndex = 29;
             // 
             // DishesType
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 450);
+            this.ClientSize = new System.Drawing.Size(418, 366);
             this.Controls.Add(this.txtBoxDescription);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblDescription);
@@ -135,6 +143,7 @@
             this.Controls.Add(this.rdoBtnMeat);
             this.Controls.Add(this.lblMeatDish);
             this.Controls.Add(this.lblTypeDish);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DishesType";
             this.Text = "DishesType";
             this.ResumeLayout(false);

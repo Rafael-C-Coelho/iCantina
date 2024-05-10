@@ -1,4 +1,4 @@
-﻿namespace iCantina.views
+namespace iCantina.views
 {
     partial class CanteenMenu
     {
