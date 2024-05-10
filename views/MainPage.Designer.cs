@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnFines = new System.Windows.Forms.Button();
-            this.btnExtras = new System.Windows.Forms.Button();
+            this.btnStudents = new System.Windows.Forms.Button();
+            this.btnProfessors = new System.Windows.Forms.Button();
+            this.btnEmployees = new System.Windows.Forms.Button();
             this.btnInvoices = new System.Windows.Forms.Button();
             this.btnDishes = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.btnReservations = new System.Windows.Forms.Button();
-            this.btnEmployees = new System.Windows.Forms.Button();
-            this.btnProfessors = new System.Windows.Forms.Button();
-            this.btnStudents = new System.Windows.Forms.Button();
+            this.btnExtras = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnFines = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,40 +59,57 @@
             this.tableLayoutPanel1.Controls.Add(this.btnExtras, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnMenu, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnFines, 2, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 15);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 426);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1035, 524);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // btnFines
+            // btnStudents
             // 
-            this.btnFines.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFines.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnFines.Location = new System.Drawing.Point(519, 144);
-            this.btnFines.Name = "btnFines";
-            this.btnFines.Size = new System.Drawing.Size(254, 135);
-            this.btnFines.TabIndex = 5;
-            this.btnFines.Text = "Fines";
-            this.btnFines.UseVisualStyleBackColor = true;
+            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btnStudents.Location = new System.Drawing.Point(4, 352);
+            this.btnStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStudents.Name = "btnStudents";
+            this.btnStudents.Size = new System.Drawing.Size(336, 168);
+            this.btnStudents.TabIndex = 8;
+            this.btnStudents.Text = "Students";
+            this.btnStudents.UseVisualStyleBackColor = true;
             // 
-            // btnExtras
+            // btnProfessors
             // 
-            this.btnExtras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnProfessors.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnExtras.Location = new System.Drawing.Point(261, 3);
-            this.btnExtras.Name = "btnExtras";
-            this.btnExtras.Size = new System.Drawing.Size(252, 135);
-            this.btnExtras.TabIndex = 4;
-            this.btnExtras.Text = "Extras";
-            this.btnExtras.UseVisualStyleBackColor = true;
+            this.btnProfessors.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btnProfessors.Location = new System.Drawing.Point(348, 352);
+            this.btnProfessors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProfessors.Name = "btnProfessors";
+            this.btnProfessors.Size = new System.Drawing.Size(337, 168);
+            this.btnProfessors.TabIndex = 7;
+            this.btnProfessors.Text = "Professors";
+            this.btnProfessors.UseVisualStyleBackColor = true;
+            // 
+            // btnEmployees
+            // 
+            this.btnEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btnEmployees.Location = new System.Drawing.Point(693, 352);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmployees.Name = "btnEmployees";
+            this.btnEmployees.Size = new System.Drawing.Size(338, 168);
+            this.btnEmployees.TabIndex = 6;
+            this.btnEmployees.Text = "Employees";
+            this.btnEmployees.UseVisualStyleBackColor = true;
             // 
             // btnInvoices
             // 
@@ -100,9 +117,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInvoices.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnInvoices.Location = new System.Drawing.Point(3, 144);
+            this.btnInvoices.Location = new System.Drawing.Point(4, 178);
+            this.btnInvoices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInvoices.Name = "btnInvoices";
-            this.btnInvoices.Size = new System.Drawing.Size(252, 135);
+            this.btnInvoices.Size = new System.Drawing.Size(336, 166);
             this.btnInvoices.TabIndex = 3;
             this.btnInvoices.Text = "Invoices";
             this.btnInvoices.UseVisualStyleBackColor = true;
@@ -113,25 +131,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDishes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnDishes.Location = new System.Drawing.Point(519, 3);
+            this.btnDishes.Location = new System.Drawing.Point(693, 4);
+            this.btnDishes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDishes.Name = "btnDishes";
-            this.btnDishes.Size = new System.Drawing.Size(254, 135);
+            this.btnDishes.Size = new System.Drawing.Size(338, 166);
             this.btnDishes.TabIndex = 2;
             this.btnDishes.Text = "Dishes";
             this.btnDishes.UseVisualStyleBackColor = true;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnMenu.Location = new System.Drawing.Point(261, 144);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(252, 135);
-            this.btnMenu.TabIndex = 1;
-            this.btnMenu.Text = "Menus";
-            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnDishes.Click += new System.EventHandler(this.btnDishes_Click);
             // 
             // btnReservations
             // 
@@ -139,58 +146,63 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReservations.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnReservations.Location = new System.Drawing.Point(3, 3);
+            this.btnReservations.Location = new System.Drawing.Point(4, 4);
+            this.btnReservations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReservations.Name = "btnReservations";
-            this.btnReservations.Size = new System.Drawing.Size(252, 135);
+            this.btnReservations.Size = new System.Drawing.Size(336, 166);
             this.btnReservations.TabIndex = 0;
             this.btnReservations.Text = "Reservations";
             this.btnReservations.UseVisualStyleBackColor = true;
             // 
-            // btnEmployees
+            // btnExtras
             // 
-            this.btnEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnExtras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnEmployees.Location = new System.Drawing.Point(519, 285);
-            this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(254, 138);
-            this.btnEmployees.TabIndex = 6;
-            this.btnEmployees.Text = "Employees";
-            this.btnEmployees.UseVisualStyleBackColor = true;
+            this.btnExtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btnExtras.Location = new System.Drawing.Point(348, 4);
+            this.btnExtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExtras.Name = "btnExtras";
+            this.btnExtras.Size = new System.Drawing.Size(337, 166);
+            this.btnExtras.TabIndex = 4;
+            this.btnExtras.Text = "Extras";
+            this.btnExtras.UseVisualStyleBackColor = true;
             // 
-            // btnProfessors
+            // btnMenu
             // 
-            this.btnProfessors.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProfessors.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnProfessors.Location = new System.Drawing.Point(261, 285);
-            this.btnProfessors.Name = "btnProfessors";
-            this.btnProfessors.Size = new System.Drawing.Size(252, 138);
-            this.btnProfessors.TabIndex = 7;
-            this.btnProfessors.Text = "Professors";
-            this.btnProfessors.UseVisualStyleBackColor = true;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btnMenu.Location = new System.Drawing.Point(348, 178);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(337, 166);
+            this.btnMenu.TabIndex = 1;
+            this.btnMenu.Text = "Menus";
+            this.btnMenu.UseVisualStyleBackColor = true;
             // 
-            // btnStudents
+            // btnFines
             // 
-            this.btnStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnFines.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btnStudents.Location = new System.Drawing.Point(3, 285);
-            this.btnStudents.Name = "btnStudents";
-            this.btnStudents.Size = new System.Drawing.Size(252, 138);
-            this.btnStudents.TabIndex = 8;
-            this.btnStudents.Text = "Students";
-            this.btnStudents.UseVisualStyleBackColor = true;
+            this.btnFines.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btnFines.Location = new System.Drawing.Point(693, 178);
+            this.btnFines.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFines.Name = "btnFines";
+            this.btnFines.Size = new System.Drawing.Size(338, 166);
+            this.btnFines.TabIndex = 5;
+            this.btnFines.Text = "Fines";
+            this.btnFines.UseVisualStyleBackColor = true;
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainPage";
             this.Text = "Main page";
             this.Load += new System.EventHandler(this.MainPage_Load);
