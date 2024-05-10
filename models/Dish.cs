@@ -1,5 +1,7 @@
+using iCantina.helpers;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,24 +10,22 @@ namespace iCantina.models
 {
     public class Dish 
     {
-        public string Meat {  get; set; } 
-        public string Fish { get; set; } 
-        public string Vegetarian { get; set; }
-
+        [Key]
+        public int Id { get; set; } 
+        public DishTypeEnum Type { get; set; }
+        public string Description { get; set; }
         public ICollection<Dish> reservations { get; set; }
-
+        public bool Active { get; set; }
 
         public Dish()
         {
             reservations = new List<Dish>();
         }
 
-        public Dish(string meat, string fish, string vegetarian)
+        public Dish(DishTypeEnum dishType, bool active)
         {
-            meat = Meat; 
-            fish = Fish;
-            vegetarian = Vegetarian;
-            reservations = new List<Dish>();
+            Active = active;
+            Type = dishType;
         }
 
     }

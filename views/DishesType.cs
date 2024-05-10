@@ -1,3 +1,5 @@
+using iCantina.controllers;
+using iCantina.helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +14,8 @@ namespace iCantina.views
 {
     public partial class DishesType : Form
     {
+        public DishTypeController controller;
+
         public DishesType()
         {
             InitializeComponent();
@@ -19,10 +23,23 @@ namespace iCantina.views
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string meat = rdoBtnMeat.Text; 
-            string fish = rdoBtnFish.Text;
-            string vegetarian = rdoBtnVegetarian.Text;
-            string description = txtBoxDescription.Text;
+            controller = new DishTypeController();
+
+            DishTypeEnum dishType = new DishTypeEnum();
+            if (rdoBtnMeat.Checked)
+            {
+                dishType = DishTypeEnum.Meat;
+            } else if (rdoBtnFish.Checked)
+            {
+                dishType = DishTypeEnum.Fish;
+            } else if (rdoBtnVegetarian.Checked)
+            {
+                dishType = DishTypeEnum.Vegetarian;
+            } else
+            {
+                MessageBox.Show("Please select the type of dish");
+                return;
+            }
 
             if (string.IsNullOrWhiteSpace(txtBoxDescription.Text))
             {
@@ -30,7 +47,16 @@ namespace iCantina.views
                 return; 
             }
 
-
+            bool wasCreated = controller.CreateDish(dishType, txtBoxDescription.Text, chBoxActive.Checked);
+            if (wasCreated)
+            {
+                MessageBox.Show("Dish created sucessfully.");
+                this.Close();
+            } else
+            {
+                MessageBox.Show("There was an error creating the dish with the specified requirments");
+                return ;
+            }
         }
     }
 }

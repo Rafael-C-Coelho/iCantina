@@ -36,6 +36,7 @@ namespace iCantina.views
             this.lblDescription = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtBoxDescription = new System.Windows.Forms.TextBox();
+            this.chBoxActive = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblMeatDish
@@ -102,8 +103,7 @@ namespace iCantina.views
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(34, 161);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescription.Location = new System.Drawing.Point(45, 146);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(90, 17);
             this.lblDescription.TabIndex = 27;
@@ -123,18 +123,32 @@ namespace iCantina.views
             // 
             // txtBoxDescription
             // 
-            this.txtBoxDescription.Location = new System.Drawing.Point(37, 180);
-            this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBoxDescription.Location = new System.Drawing.Point(49, 169);
             this.txtBoxDescription.Multiline = true;
             this.txtBoxDescription.Name = "txtBoxDescription";
             this.txtBoxDescription.Size = new System.Drawing.Size(345, 112);
             this.txtBoxDescription.TabIndex = 29;
             // 
+            // chBoxActive
+            // 
+            this.chBoxActive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.chBoxActive.AutoSize = true;
+            this.chBoxActive.Checked = true;
+            this.chBoxActive.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chBoxActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chBoxActive.Location = new System.Drawing.Point(49, 312);
+            this.chBoxActive.Name = "chBoxActive";
+            this.chBoxActive.Size = new System.Drawing.Size(77, 24);
+            this.chBoxActive.TabIndex = 30;
+            this.chBoxActive.Text = "Active";
+            this.chBoxActive.UseVisualStyleBackColor = true;
+            // 
             // DishesType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 366);
+            this.ClientSize = new System.Drawing.Size(557, 450);
+            this.Controls.Add(this.chBoxActive);
             this.Controls.Add(this.txtBoxDescription);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblDescription);
@@ -160,5 +174,6 @@ namespace iCantina.views
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtBoxDescription;
+        private System.Windows.Forms.CheckBox chBoxActive;
     }
 }

@@ -57,14 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controllers\Controller.cs" />
-    <Compile Include="controllers\DishController.cs" />
+    <Compile Include="controllers\DishTypeController.cs" />
     <Compile Include="controllers\LoginController.cs" />
-    <Compile Include="Dishes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dishes.Designer.cs">
-      <DependentUpon>Dishes.cs</DependentUpon>
-    </Compile>
+    <Compile Include="helpers\DishTypeEnum.cs" />
     <Compile Include="iCantinaContext.cs" />
     <Compile Include="Migrations\202405061327027_InitialCreate.cs" />
     <Compile Include="Migrations\202405061327027_InitialCreate.Designer.cs">
@@ -111,9 +106,6 @@
     <Compile Include="views\CanteenMenu.Designer.cs">
       <DependentUpon>CanteenMenu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dishes.resx">
-      <DependentUpon>Dishes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405061327027_InitialCreate.resx">
       <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>

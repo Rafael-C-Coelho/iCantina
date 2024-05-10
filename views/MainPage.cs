@@ -25,5 +25,11 @@ namespace iCantina.views
         {
             this.Text = $"Main page (logged in as {this.employee.Name})";
         }
+
+        private void btnDishes_Click(object sender, EventArgs e)
+        {
+            DishesType dishesType = new DishesType();
+            dishesType.Show();
+        }
     }
 }
