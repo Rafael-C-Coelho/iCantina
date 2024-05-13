@@ -1,4 +1,4 @@
-﻿using iCantina.models;
+using iCantina.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace iCantina.controllers
 {
     public class LoginController : Controller
     {
-        public LoginController()
+        public LoginController() : base()
         {
             Console.WriteLine("Login controller initialized.");
         }

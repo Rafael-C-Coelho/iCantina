@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ namespace iCantina.models
             Balance = 0;
         }
 
-        public Client(string name, int nif, float balance) : base(name, nif)
+        public Client(string name, string nif, float balance) : base(name, nif)
         {
             Invoices = new List<Invoice>();
             Balance = balance;

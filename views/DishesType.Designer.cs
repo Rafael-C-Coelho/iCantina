@@ -65,7 +65,7 @@ namespace iCantina.views
             this.rdoBtnMeat.AutoSize = true;
             this.rdoBtnMeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoBtnMeat.Location = new System.Drawing.Point(37, 97);
-            this.rdoBtnMeat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoBtnMeat.Margin = new System.Windows.Forms.Padding(2);
             this.rdoBtnMeat.Name = "rdoBtnMeat";
             this.rdoBtnMeat.Size = new System.Drawing.Size(61, 21);
             this.rdoBtnMeat.TabIndex = 24;
@@ -78,7 +78,7 @@ namespace iCantina.views
             this.rdoBtnFish.AutoSize = true;
             this.rdoBtnFish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoBtnFish.Location = new System.Drawing.Point(134, 97);
-            this.rdoBtnFish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoBtnFish.Margin = new System.Windows.Forms.Padding(2);
             this.rdoBtnFish.Name = "rdoBtnFish";
             this.rdoBtnFish.Size = new System.Drawing.Size(56, 21);
             this.rdoBtnFish.TabIndex = 25;
@@ -91,7 +91,7 @@ namespace iCantina.views
             this.rdoBtnVegetarian.AutoSize = true;
             this.rdoBtnVegetarian.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoBtnVegetarian.Location = new System.Drawing.Point(222, 96);
-            this.rdoBtnVegetarian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoBtnVegetarian.Margin = new System.Windows.Forms.Padding(2);
             this.rdoBtnVegetarian.Name = "rdoBtnVegetarian";
             this.rdoBtnVegetarian.Size = new System.Drawing.Size(105, 21);
             this.rdoBtnVegetarian.TabIndex = 26;
@@ -103,7 +103,7 @@ namespace iCantina.views
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(45, 146);
+            this.lblDescription.Location = new System.Drawing.Point(34, 128);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(90, 17);
             this.lblDescription.TabIndex = 27;
@@ -112,8 +112,8 @@ namespace iCantina.views
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(177, 303);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Location = new System.Drawing.Point(176, 300);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(56, 24);
             this.btnSave.TabIndex = 28;
@@ -123,7 +123,7 @@ namespace iCantina.views
             // 
             // txtBoxDescription
             // 
-            this.txtBoxDescription.Location = new System.Drawing.Point(49, 169);
+            this.txtBoxDescription.Location = new System.Drawing.Point(37, 148);
             this.txtBoxDescription.Multiline = true;
             this.txtBoxDescription.Name = "txtBoxDescription";
             this.txtBoxDescription.Size = new System.Drawing.Size(345, 112);
@@ -131,14 +131,13 @@ namespace iCantina.views
             // 
             // chBoxActive
             // 
-            this.chBoxActive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chBoxActive.AutoSize = true;
             this.chBoxActive.Checked = true;
             this.chBoxActive.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chBoxActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chBoxActive.Location = new System.Drawing.Point(49, 312);
+            this.chBoxActive.Location = new System.Drawing.Point(37, 266);
             this.chBoxActive.Name = "chBoxActive";
-            this.chBoxActive.Size = new System.Drawing.Size(77, 24);
+            this.chBoxActive.Size = new System.Drawing.Size(65, 21);
             this.chBoxActive.TabIndex = 30;
             this.chBoxActive.Text = "Active";
             this.chBoxActive.UseVisualStyleBackColor = true;
@@ -147,7 +146,7 @@ namespace iCantina.views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 450);
+            this.ClientSize = new System.Drawing.Size(418, 345);
             this.Controls.Add(this.chBoxActive);
             this.Controls.Add(this.txtBoxDescription);
             this.Controls.Add(this.btnSave);
@@ -157,7 +156,7 @@ namespace iCantina.views
             this.Controls.Add(this.rdoBtnMeat);
             this.Controls.Add(this.lblMeatDish);
             this.Controls.Add(this.lblTypeDish);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DishesType";
             this.Text = "DishesType";
             this.ResumeLayout(false);

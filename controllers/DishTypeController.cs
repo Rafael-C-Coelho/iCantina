@@ -1,4 +1,4 @@
-﻿using iCantina.helpers;
+using iCantina.helpers;
 using iCantina.models;
 using System;
 using System.Collections.Generic;
@@ -25,7 +25,7 @@ namespace iCantina.controllers
                 base.context.Dishes.Add(dish);
 
                 return true;
-            } catch (Exception ex)
+            } catch (Exception)
             {
                 return false;
             }
