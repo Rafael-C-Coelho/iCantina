@@ -156,8 +156,8 @@
   <ItemGroup>
     <Compile Include="controllers\ListClientsController.cs" />
     <Compile Include="controllers\Controller.cs" />
-    <Compile Include="controllers\DishTypeController.cs" />
-    <Compile Include="controllers\ClientDetailsController.cs" />
+    <Compile Include="controllers\DishesController.cs" />
+    <Compile Include="controllers\EditDishController.cs" />
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="helpers\DishTypeEnum.cs" />
     <Compile Include="iCantinaContext.cs" />
