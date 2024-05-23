@@ -1,22 +1,25 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 using System.Windows.Forms;
 
 namespace iCantina.models
 {
-    public class Reservation
+  public class Reservation
+  {
+    [Key]
+    public int Id { get; set; }
+    public Student Student { get; set; }
+    public Professor Professor { get; set; }
+    public DateTime Date { get; set; }
+    public Dish Dish { get; set; }
+    public ICollection<Extras> Extras { get; set; }
+    public Menu Menu { get; set; }
+    public Penalty Penalty { get; set; }
+
+    public Reservation()
     {
-        public Client client { get; set; } //TODO Foreign key
-        public DateTime date = DateTime.Now;
-        public Dish dish { get; set; }
-        public Extras extas { get; set; }
-        public ICollection<Dish> dishes { get; set; }
-        public ICollection<Extras> extras { get; set; }
-        public ICollection<MenusCantina> menu { get; set; }
-        public Mult mult { get; set; }
+      Extras = new List<Extras>();
     }
+  }
 }

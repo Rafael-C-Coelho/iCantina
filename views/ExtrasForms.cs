@@ -1,31 +1,24 @@
-﻿using iCantina.controllers;
+using iCantina.controllers;
 using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace iCantina.views
 {
-    public partial class ExtrasForms : Form 
+  public partial class ExtrasForms : Form
+  {
+    public ExtrasForms()
     {
-        public ExtrasForms()
-        {
-            InitializeComponent();
-        }
-
-        private void buttonExtras_Click(object sender, EventArgs e)
-        {
-            string description = textBoxDescriptionExtras.Text;
-            double price = Convert.ToDouble(textBoxPriceExtras.Text);
-            bool isActive = checkBoxActiveExtras.Checked;
-
-            ExtrasController extrasController = new ExtrasController();
-        }
+      InitializeComponent();
     }
+
+    private void buttonExtras_Click(object sender, EventArgs e)
+    {
+      string description = textBoxDescriptionExtras.Text;
+      double price = Convert.ToDouble(textBoxPriceExtras.Text);
+      bool isActive = checkBoxActiveExtras.Checked;
+
+      ExtrasController extrasController = new ExtrasController();
+      extrasController.ExtrasVerification(description, price, isActive);
+    }
+  }
 }

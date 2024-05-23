@@ -62,9 +62,9 @@
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="helpers\DishTypeEnum.cs" />
     <Compile Include="iCantinaContext.cs" />
-    <Compile Include="Migrations\202405061327027_InitialCreate.cs" />
-    <Compile Include="Migrations\202405061327027_InitialCreate.Designer.cs">
-      <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202405232118469_Initial.cs" />
+    <Compile Include="Migrations\202405232118469_Initial.Designer.cs">
+      <DependentUpon>202405232118469_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="models\Client.cs" />
@@ -73,6 +73,8 @@
     <Compile Include="models\Extras.cs" />
     <Compile Include="models\Invoice.cs" />
     <Compile Include="models\InvoiceLine.cs" />
+    <Compile Include="models\Menu.cs" />
+    <Compile Include="models\Penalty.cs" />
     <Compile Include="models\Professor.cs" />
     <Compile Include="models\Reservation.cs" />
     <Compile Include="models\Student.cs" />
@@ -115,8 +117,8 @@
     <Compile Include="views\ReservationForm.Designer.cs">
       <DependentUpon>ReservationForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Migrations\202405061327027_InitialCreate.resx">
-      <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202405232118469_Initial.resx">
+      <DependentUpon>202405232118469_Initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

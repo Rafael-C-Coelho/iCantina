@@ -1,22 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace iCantina.models
 {
-    public class Professor : Client
-    {
-        public string Email { get; set; }
-        
-        public Professor()
-        {
-        }
+  public class Professor : Client
+  {
+    public string Email { get; set; }
 
-        public Professor(string name, int nif, float balance, string email) : base(name, nif, balance)
-        {
-            Email = email;
-        }
+    public Professor()
+    {
     }
+
+    public Professor(string name, int nif, float balance, string email) : base(name, nif, balance)
+    {
+      Email = email;
+    }
+  }
 }
