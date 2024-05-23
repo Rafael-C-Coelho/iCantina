@@ -1,4 +1,5 @@
 ﻿using iCantina.models;
+using iCantina.views;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -16,6 +17,15 @@ namespace iCantina
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceLine> InvoiceLines { get; set; }
 
-        public DbSet<Dish> Dishes { get; set; }   
+        public DbSet<CreateDish> Dishes { get; set; }   
+
+        public DbSet <MeatDish> MeatDishes { get; set; }
+        public DbSet <FishDish> FishDishes { get; set;}
+        public DbSet <VegetarianDish> VegetarianDishes { get; set; }
+
+        public DbSet <Description> Descriptions { get; set; }
+        public DbSet <DescriptionLine> DescriptionLines { get; set; }
+
+
     }
 }

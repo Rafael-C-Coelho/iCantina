@@ -154,10 +154,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controllers\ClientDetailsController.cs" />
+    <Compile Include="controllers\CreateDishesController.cs" />
     <Compile Include="controllers\ListClientsController.cs" />
     <Compile Include="controllers\Controller.cs" />
-    <Compile Include="controllers\DishesController.cs" />
-    <Compile Include="controllers\EditDishController.cs" />
+    <Compile Include="controllers\ListDishesController.cs" />
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="helpers\DishTypeEnum.cs" />
     <Compile Include="iCantinaContext.cs" />
@@ -175,10 +176,15 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="models\Client.cs" />
+    <Compile Include="models\CreateDish.cs" />
+    <Compile Include="models\Description.cs" />
+    <Compile Include="models\DescriptionLine.cs" />
     <Compile Include="models\Dish.cs" />
     <Compile Include="models\Employee.cs" />
+    <Compile Include="models\FishDish.cs" />
     <Compile Include="models\Invoice.cs" />
     <Compile Include="models\InvoiceLine.cs" />
+    <Compile Include="models\MeatDish.cs" />
     <Compile Include="models\Professor.cs" />
     <Compile Include="models\Student.cs" />
     <Compile Include="models\User.cs" />
@@ -190,11 +196,17 @@
     <Compile Include="views\ClientDetails.Designer.cs">
       <DependentUpon>ClientDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\DishesType.cs">
+    <Compile Include="views\CreateDishes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\DishesType.Designer.cs">
-      <DependentUpon>DishesType.cs</DependentUpon>
+    <Compile Include="views\CreateDishes.Designer.cs">
+      <DependentUpon>CreateDishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Dishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Dishes.Designer.cs">
+      <DependentUpon>Dishes.cs</DependentUpon>
     </Compile>
     <Compile Include="views\ListClients.cs">
       <SubType>Form</SubType>
@@ -220,6 +232,7 @@
     <Compile Include="views\CanteenMenu.Designer.cs">
       <DependentUpon>CanteenMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\VegetarianDish.cs" />
     <EmbeddedResource Include="Migrations\202405061327027_InitialCreate.resx">
       <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,8 +254,11 @@
     <EmbeddedResource Include="views\ClientDetails.resx">
       <DependentUpon>ClientDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\DishesType.resx">
-      <DependentUpon>DishesType.cs</DependentUpon>
+    <EmbeddedResource Include="views\CreateDishes.resx">
+      <DependentUpon>CreateDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Dishes.resx">
+      <DependentUpon>Dishes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\ListClients.resx">
       <DependentUpon>ListClients.cs</DependentUpon>
