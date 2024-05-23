@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iCantina.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace iCantina.views
         public ReservationForm()
         {
             InitializeComponent();
+        }
+
+        private void checkedListBoxExtrasReservation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ICollection<Extras> extras = new List<Extras>();
+        }
+
+        private void buttonReservation_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

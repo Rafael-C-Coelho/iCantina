@@ -34,6 +34,7 @@
             this.textBoxDescriptionExtras = new System.Windows.Forms.TextBox();
             this.textBoxPriceExtras = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkBoxActiveExtras = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -74,25 +75,38 @@
             // 
             // textBoxPriceExtras
             // 
-            this.textBoxPriceExtras.Location = new System.Drawing.Point(198, 414);
+            this.textBoxPriceExtras.Location = new System.Drawing.Point(217, 414);
             this.textBoxPriceExtras.Name = "textBoxPriceExtras";
-            this.textBoxPriceExtras.Size = new System.Drawing.Size(537, 31);
+            this.textBoxPriceExtras.Size = new System.Drawing.Size(518, 31);
             this.textBoxPriceExtras.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(76, 420);
+            this.label3.Location = new System.Drawing.Point(66, 414);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Price:";
+            // 
+            // checkBoxActiveExtras
+            // 
+            this.checkBoxActiveExtras.AutoSize = true;
+            this.checkBoxActiveExtras.Checked = true;
+            this.checkBoxActiveExtras.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxActiveExtras.Location = new System.Drawing.Point(71, 517);
+            this.checkBoxActiveExtras.Name = "checkBoxActiveExtras";
+            this.checkBoxActiveExtras.Size = new System.Drawing.Size(103, 29);
+            this.checkBoxActiveExtras.TabIndex = 7;
+            this.checkBoxActiveExtras.Text = "Active";
+            this.checkBoxActiveExtras.UseVisualStyleBackColor = true;
             // 
             // ExtrasForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 734);
+            this.Controls.Add(this.checkBoxActiveExtras);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxPriceExtras);
             this.Controls.Add(this.textBoxDescriptionExtras);
@@ -114,5 +128,6 @@
         private System.Windows.Forms.TextBox textBoxDescriptionExtras;
         private System.Windows.Forms.TextBox textBoxPriceExtras;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBoxActiveExtras;
     }
 }

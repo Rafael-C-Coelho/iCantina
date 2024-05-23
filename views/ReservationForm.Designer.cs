@@ -115,6 +115,7 @@
             this.buttonReservation.TabIndex = 12;
             this.buttonReservation.Text = "Reservation";
             this.buttonReservation.UseVisualStyleBackColor = true;
+            this.buttonReservation.Click += new System.EventHandler(this.buttonReservation_Click);
             // 
             // checkedListBoxExtrasReservation
             // 
@@ -123,6 +124,7 @@
             this.checkedListBoxExtrasReservation.Name = "checkedListBoxExtrasReservation";
             this.checkedListBoxExtrasReservation.Size = new System.Drawing.Size(214, 200);
             this.checkedListBoxExtrasReservation.TabIndex = 11;
+            this.checkedListBoxExtrasReservation.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxExtrasReservation_SelectedIndexChanged);
             // 
             // comboBoxClientCreate
             // 
@@ -276,14 +278,14 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Check";
             // 
-            // Reservation
+            // ReservationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1312, 816);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.label1);
-            this.Name = "Reservation";
+            this.Name = "ReservationForm";
             this.Text = "Reservation";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using iCantina.controllers;
+using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +12,7 @@ using System.Windows.Forms;
 
 namespace iCantina.views
 {
-    public partial class ExtrasForms : Form
+    public partial class ExtrasForms : Form 
     {
         public ExtrasForms()
         {
@@ -21,12 +23,9 @@ namespace iCantina.views
         {
             string description = textBoxDescriptionExtras.Text;
             double price = Convert.ToDouble(textBoxPriceExtras.Text);
+            bool isActive = checkBoxActiveExtras.Checked;
 
-            if(string.IsNullOrWhiteSpace(textBoxDescriptionExtras.Text) && string.IsNullOrWhiteSpace(textBoxPriceExtras.Text))
-            {
-                MessageBox.Show("Please, insert a description or price of the extra");
-                return;
-            }
+            ExtrasController extrasController = new ExtrasController();
         }
     }
 }

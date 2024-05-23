@@ -17,5 +17,6 @@ namespace iCantina
         public DbSet<InvoiceLine> InvoiceLines { get; set; }
 
         public DbSet<Dish> Dishes { get; set; }   
+        public DbSet<Extras> Extras { get; set; }
     }
 }
