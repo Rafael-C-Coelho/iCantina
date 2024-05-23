@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -158,13 +158,15 @@
     <Compile Include="controllers\CreateDishesController.cs" />
     <Compile Include="controllers\ListClientsController.cs" />
     <Compile Include="controllers\Controller.cs" />
+    <Compile Include="controllers\DishTypeController.cs" />
+    <Compile Include="controllers\ExtrasController.cs" />
     <Compile Include="controllers\ListDishesController.cs" />
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="helpers\DishTypeEnum.cs" />
     <Compile Include="iCantinaContext.cs" />
-    <Compile Include="Migrations\202405061327027_InitialCreate.cs" />
-    <Compile Include="Migrations\202405061327027_InitialCreate.Designer.cs">
-      <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202405232118469_Initial.cs" />
+    <Compile Include="Migrations\202405232118469_Initial.Designer.cs">
+      <DependentUpon>202405232118469_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202405101626171_AddDishes.cs" />
     <Compile Include="Migrations\202405101626171_AddDishes.Designer.cs">
@@ -181,11 +183,13 @@
     <Compile Include="models\DescriptionLine.cs" />
     <Compile Include="models\Dish.cs" />
     <Compile Include="models\Employee.cs" />
-    <Compile Include="models\FishDish.cs" />
+    <Compile Include="models\Extras.cs" />
     <Compile Include="models\Invoice.cs" />
     <Compile Include="models\InvoiceLine.cs" />
-    <Compile Include="models\MeatDish.cs" />
+    <Compile Include="models\Menu.cs" />
+    <Compile Include="models\Penalty.cs" />
     <Compile Include="models\Professor.cs" />
+    <Compile Include="models\Reservation.cs" />
     <Compile Include="models\Student.cs" />
     <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
@@ -214,6 +218,12 @@
     <Compile Include="views\ListClients.Designer.cs">
       <DependentUpon>ListClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ExtrasForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ExtrasForms.Designer.cs">
+      <DependentUpon>ExtrasForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,9 +242,14 @@
     <Compile Include="views\CanteenMenu.Designer.cs">
       <DependentUpon>CanteenMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\VegetarianDish.cs" />
-    <EmbeddedResource Include="Migrations\202405061327027_InitialCreate.resx">
-      <DependentUpon>202405061327027_InitialCreate.cs</DependentUpon>
+    <Compile Include="views\ReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ReservationForm.Designer.cs">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Migrations\202405232118469_Initial.resx">
+      <DependentUpon>202405232118469_Initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405101626171_AddDishes.resx">
       <DependentUpon>202405101626171_AddDishes.cs</DependentUpon>
@@ -254,6 +269,9 @@
     <EmbeddedResource Include="views\ClientDetails.resx">
       <DependentUpon>ClientDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\ExtrasForms.resx">
+      <DependentUpon>ExtrasForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\CreateDishes.resx">
       <DependentUpon>CreateDishes.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\CanteenMenu.resx">
       <DependentUpon>CanteenMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ReservationForm.resx">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="controllers\.gitkeep" />
     <None Include="models\.gitkeep" />
