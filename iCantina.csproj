@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -155,35 +155,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controllers\ClientDetailsController.cs" />
-    <Compile Include="controllers\CreateDishesController.cs" />
+    <Compile Include="controllers\DishDetailsController.cs" />
+    <Compile Include="controllers\ListExtrasController.cs" />
     <Compile Include="controllers\ListClientsController.cs" />
     <Compile Include="controllers\Controller.cs" />
-    <Compile Include="controllers\DishTypeController.cs" />
-    <Compile Include="controllers\ExtrasController.cs" />
+    <Compile Include="controllers\ExtraDetailsController.cs" />
+    <Compile Include="controllers\CanteenMenuController.cs" />
     <Compile Include="controllers\ListDishesController.cs" />
     <Compile Include="controllers\LoginController.cs" />
     <Compile Include="helpers\DishTypeEnum.cs" />
     <Compile Include="iCantinaContext.cs" />
-    <Compile Include="Migrations\202405232118469_Initial.cs" />
-    <Compile Include="Migrations\202405232118469_Initial.Designer.cs">
-      <DependentUpon>202405232118469_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202405101626171_AddDishes.cs" />
-    <Compile Include="Migrations\202405101626171_AddDishes.Designer.cs">
-      <DependentUpon>202405101626171_AddDishes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202405122227481_ChangeTypeOfFields.cs" />
-    <Compile Include="Migrations\202405122227481_ChangeTypeOfFields.Designer.cs">
-      <DependentUpon>202405122227481_ChangeTypeOfFields.cs</DependentUpon>
+    <Compile Include="Migrations\202405241554292_SomeChanges.cs" />
+    <Compile Include="Migrations\202405241554292_SomeChanges.Designer.cs">
+      <DependentUpon>202405241554292_SomeChanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="models\Client.cs" />
-    <Compile Include="models\CreateDish.cs" />
-    <Compile Include="models\Description.cs" />
-    <Compile Include="models\DescriptionLine.cs" />
     <Compile Include="models\Dish.cs" />
     <Compile Include="models\Employee.cs" />
-    <Compile Include="models\Extras.cs" />
+    <Compile Include="models\Extra.cs" />
     <Compile Include="models\Invoice.cs" />
     <Compile Include="models\InvoiceLine.cs" />
     <Compile Include="models\Menu.cs" />
@@ -200,17 +190,17 @@
     <Compile Include="views\ClientDetails.Designer.cs">
       <DependentUpon>ClientDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\CreateDishes.cs">
+    <Compile Include="views\DishDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\CreateDishes.Designer.cs">
-      <DependentUpon>CreateDishes.cs</DependentUpon>
+    <Compile Include="views\DishDetails.Designer.cs">
+      <DependentUpon>DishDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\Dishes.cs">
+    <Compile Include="views\ListDishes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Dishes.Designer.cs">
-      <DependentUpon>Dishes.cs</DependentUpon>
+    <Compile Include="views\ListDishes.Designer.cs">
+      <DependentUpon>ListDishes.cs</DependentUpon>
     </Compile>
     <Compile Include="views\ListClients.cs">
       <SubType>Form</SubType>
@@ -218,11 +208,17 @@
     <Compile Include="views\ListClients.Designer.cs">
       <DependentUpon>ListClients.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\ExtrasForms.cs">
+    <Compile Include="views\ExtraDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ExtrasForms.Designer.cs">
-      <DependentUpon>ExtrasForms.cs</DependentUpon>
+    <Compile Include="views\ExtraDetails.Designer.cs">
+      <DependentUpon>ExtraDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ListExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ListExtras.Designer.cs">
+      <DependentUpon>ListExtras.cs</DependentUpon>
     </Compile>
     <Compile Include="views\MainPage.cs">
       <SubType>Form</SubType>
@@ -248,14 +244,8 @@
     <Compile Include="views\ReservationForm.Designer.cs">
       <DependentUpon>ReservationForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Migrations\202405232118469_Initial.resx">
-      <DependentUpon>202405232118469_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202405101626171_AddDishes.resx">
-      <DependentUpon>202405101626171_AddDishes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202405122227481_ChangeTypeOfFields.resx">
-      <DependentUpon>202405122227481_ChangeTypeOfFields.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202405241554292_SomeChanges.resx">
+      <DependentUpon>202405241554292_SomeChanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -269,17 +259,20 @@
     <EmbeddedResource Include="views\ClientDetails.resx">
       <DependentUpon>ClientDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\ExtrasForms.resx">
-      <DependentUpon>ExtrasForms.cs</DependentUpon>
+    <EmbeddedResource Include="views\ExtraDetails.resx">
+      <DependentUpon>ExtraDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\CreateDishes.resx">
-      <DependentUpon>CreateDishes.cs</DependentUpon>
+    <EmbeddedResource Include="views\DishDetails.resx">
+      <DependentUpon>DishDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\Dishes.resx">
-      <DependentUpon>Dishes.cs</DependentUpon>
+    <EmbeddedResource Include="views\ListDishes.resx">
+      <DependentUpon>ListDishes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\ListClients.resx">
       <DependentUpon>ListClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ListExtras.resx">
+      <DependentUpon>ListExtras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>

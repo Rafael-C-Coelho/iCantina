@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+using iCantina.helpers;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace iCantina.models
 {
-    public class Dish
+  public class Dish
+  {
+    [Key]
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public DishTypeEnum Type { get; set; }
+    public bool Active { get; set; }
+
+    public Dish()
     {
-        public string Name { get; set; }
-
-        public Dish()
-        {
-        }
-
-        public Dish(string name)
-        {
-            Name = name;
-        }
-
-        public override string ToString()
-        {
-            return $"Name: {Name}";
-        }
     }
+
+    public override string ToString()
+    {
+      return $"Name: {Name}";
+    }
+  }
 }

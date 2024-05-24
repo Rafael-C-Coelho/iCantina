@@ -49,7 +49,7 @@ namespace iCantina.views
       }
       else if (rdoBtnStudent.Checked)
       {
-        success = controller.CreateStudent(txtBoxName.Text, txtBoxNIF.Text, int.Parse(txtBoxVariable.Text), float.Parse(txtBoxBalance.Text));
+        success = controller.CreateStudent(txtBoxName.Text, txtBoxNIF.Text, int.Parse(txtBoxVariable.Text), float.TryParse(txtBoxBalance.Text, out float t) ? t : 0);
       }
 
       if (success)

@@ -13,7 +13,7 @@ namespace iCantina.models
     public int Id { get; set; }
     public DateTime Data { get; set; }
     public ICollection<Dish> Dishes { get; set; }
-    public ICollection<Extras> Extras { get; set; }
+    public ICollection<Extra> Extras { get; set; }
     public int QuantityAvailable { get; set; }
     public double PriceStudent { get; set; }
     public double PriceProfessor { get; set; }

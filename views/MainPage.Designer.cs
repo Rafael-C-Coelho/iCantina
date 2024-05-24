@@ -150,6 +150,7 @@
 			this.btnReservations.TabIndex = 0;
 			this.btnReservations.Text = "Reservations";
 			this.btnReservations.UseVisualStyleBackColor = true;
+			this.btnReservations.Click += new System.EventHandler(this.btnReservations_Click);
 			// 
 			// btnExtras
 			// 
@@ -163,6 +164,7 @@
 			this.btnExtras.TabIndex = 1;
 			this.btnExtras.Text = "Extras";
 			this.btnExtras.UseVisualStyleBackColor = true;
+			this.btnExtras.Click += new System.EventHandler(this.btnExtras_Click);
 			// 
 			// btnMenu
 			// 

@@ -69,12 +69,14 @@ namespace iCantina.views
           Student student = (Student)lstBoxClients.SelectedItem;
           ClientDetails clientDetails = new ClientDetails(this.isStudent, student);
           clientDetails.Show();
+          this.Close();
         }
         else
         {
           Professor professor = (Professor)lstBoxClients.SelectedItem;
           ClientDetails clientDetails = new ClientDetails(this.isStudent, professor);
           clientDetails.Show();
+          this.Close();
         }
       }
     }

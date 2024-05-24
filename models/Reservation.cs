@@ -13,13 +13,13 @@ namespace iCantina.models
     public Professor Professor { get; set; }
     public DateTime Date { get; set; }
     public Dish Dish { get; set; }
-    public ICollection<Extras> Extras { get; set; }
+    public ICollection<Extra> Extras { get; set; }
     public Menu Menu { get; set; }
     public Penalty Penalty { get; set; }
 
     public Reservation()
     {
-      Extras = new List<Extras>();
+      Extras = new List<Extra>();
     }
   }
 }

@@ -22,8 +22,8 @@ namespace iCantina.views
 
     private void btnDishes_Click(object sender, EventArgs e)
     {
-      DishesType dishesType = new DishesType();
-      dishesType.Show();
+      ListDishes dishes = new ListDishes();
+      dishes.Show();
     }
 
     private void btnMenu_Click(object sender, EventArgs e)
@@ -49,6 +49,18 @@ namespace iCantina.views
     {
       ListClients listProfessors = new ListClients(false);
       listProfessors.Show();
+    }
+
+    private void btnReservations_Click(object sender, EventArgs e)
+    {
+      ReservationForm reservationForm = new ReservationForm();
+      reservationForm.Show();
+    }
+
+    private void btnExtras_Click(object sender, EventArgs e)
+    {
+      ListExtras listExtras = new ListExtras();
+      listExtras.Show();
     }
   }
 }
